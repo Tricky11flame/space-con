@@ -14,6 +14,7 @@
 // }
 
 // src/app/layout.js
+"use client"
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import "../globals.css"
