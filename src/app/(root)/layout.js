@@ -18,12 +18,12 @@ import Navbar from '../../components/Navbar';
 import "../globals.css"
 
 const RootLayout= ({
-  children,}) => {
+  children}) => {
   return (
-    <div>
+    <html lang="en">
       <Navbar />
       <div className="container mx-auto my-4">{children}</div>
-    </div>
+    </html>
   );
 };
 

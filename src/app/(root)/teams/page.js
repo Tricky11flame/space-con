@@ -1,6 +1,6 @@
 // pages/teams/index.js
 // "use client"
-import React from 'react';
+
 import TeamSlider from '../../../components/TeamSlider';
 // import RootLayout from '../layout.js';
 // import { useRouter } from 'next/navigation';
