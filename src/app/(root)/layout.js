@@ -14,15 +14,8 @@
 // }
 
 // src/app/layout.js
-"use client"
-import React from 'react';
 import Navbar from '../../components/Navbar';
 import "../globals.css"
-
-
-
-
-
 
 const RootLayout= ({
   children,}) => {
@@ -35,9 +28,6 @@ const RootLayout= ({
 };
 
 export default RootLayout;
-
-
-//////
 
 
 

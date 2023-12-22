@@ -1,5 +1,4 @@
 // src/app/(root/)page.js
-import React from 'react';
 import EventCard from '../../components/EventCard';
 import ProgramCard from '../../components/ProgramCard';
 
