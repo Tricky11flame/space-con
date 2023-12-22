@@ -1,6 +1,6 @@
 // components/Home.js
 
-const Home = () => {
+const Zhome = () => {
     return (
       <div>
         <nav className="bg-purple-500 p-4">
@@ -18,5 +18,5 @@ const Home = () => {
     );
   };
   
-  export default Home;
+  export default Zhome;
   
