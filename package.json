@@ -1,6 +1,7 @@
 {
   "name": "astro-con",
   "version": "0.1.0",
+  "homepage": "https://astro-con-6k9p-git-main-kartikays-projects-12a5cd3d.vercel.app/",
   "private": true,
   "scripts": {
     "dev": "next dev",
