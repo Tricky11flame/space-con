@@ -2,3 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@keyframes motion {
+    from{}to{
+        transform: translateY(-4rem);
+    }
+}
+
+.fixed-background {
+    @apply fixed top-0 left-0 w-full h-full bg-cover bg-center;
+    background-image: url('../../public/0181eefa-b348-4a08-83d5-9fa663b27718.jpeg');
+    z-index: -1;
+  }
+
+  .astronaut{
+    animation: motion 3s linear infinite alternate ;
+}
+
+@keyframes motion {
+    from{}to{
+        transform: translateY(-4rem);
+    }
+}
+
+.nav4{
+    @apply relative tracking-[1px]
+}
+
+.nav4::before{
+    @apply content-[''] bg-spaceCon-tertiary h-[3px] w-[100%] left-0 -bottom-[5px] rounded-xl absolute transition-transform duration-500 origin-right scale-0
+}
+
+.nav4:hover::before{
+    @apply scale-100 origin-left
+}

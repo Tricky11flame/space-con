@@ -1,9 +1,9 @@
 // pages/teams/index.js
 // "use client"
 
+import Link from 'next/link';
 import TeamSlider from '../../../components/TeamSlider';
 // import RootLayout from '../layout.js';
-// import { useRouter } from 'next/navigation';
 
 // const teams = [
 //   { name: 'Tech', slug: 'tech' },
@@ -16,19 +16,28 @@ import TeamSlider from '../../../components/TeamSlider';
 //   { name: 'Leads', slug: 'leads' },
 // ];
 
-const Page = () => {
 //     const [selectedTeam, setSelectedTeam] = useState(null);
-//     const router = useRouter();
-  
-//     const handleTeamClick = (team) => {
-//       setSelectedTeam(team);
-//       router.push(`/teams/${team.slug}`);
-//     };  
 
+
+//     const handleTeamClick = (team) => {
+  //       setSelectedTeam(team);
+  //       router.push(`/teams/${team.slug}`);
+  //     };  
+
+import { TEAM_DB } from '../data';
+const Page = () => {
   return (
       <div className="mx-4 my-8">
         <h2 className="text-2xl font-bold mb-4">Teams</h2>
         {/* <TeamSlider teams={teams} handleTeamClick={handleTeamClick} selectedTeam={selectedTeam} /> */}
+        <Link href="/teams/[dept]" as="/teams/tech">
+        Technology
+      </Link>
+      <Link href="/teams/[dept]" as="/teams/logi">
+        Logistics
+      </Link>
+
+      <div>{TEAM_DB['tech']}</div>
       </div>
   );
 };

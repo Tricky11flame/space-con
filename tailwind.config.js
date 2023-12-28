@@ -12,7 +12,25 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        spaceCon: {
+          opbg : '#010415',
+          primary : '#392467',
+          secondary : '#5D3587',
+          tertiary : '#A367B1',
+          q : '#FFD1E3'
+        } 
+      },
+  
+      boxShadow : {
+        '3xl' : '-4px 4px #392467',
+      }
+    
+    },fontFamily : {
+        spaceCon : ['Trispace']
+      }
     },
-  },
   plugins: [],
 }
+
+

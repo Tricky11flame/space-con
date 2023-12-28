@@ -1,0 +1,52 @@
+
+.slider-container {
+  overflow: hidden;
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.58, 1)
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%; /* Set the width of each slide to 100% of the container */
+}
+
+/* Add additional styling for your slides as needed */
+
+/* Animation to enable auto-scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the slider */
+.slider.auto-scroll {
+  animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+}
