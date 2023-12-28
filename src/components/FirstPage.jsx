@@ -13,7 +13,7 @@ const FirstPage = () => {
   return (
     <div className="bg-spaceCon-opbg text-white font-spaceCon min-h-screen">
       {/* Navbar */}
-      <nav className="flex items-center justify-between p-0 fixed w-[100%] py-4 z-50 border-b-2">
+      <nav className="flex items-center justify-between p-0 fixed w-[100%] py-4 z-50 border-b-2 bg-spaceCon-secondary">
         {/* Logo */}
         <div className="flex items-center ml-4">
           <img src="SpaceConLogo.svg" alt="Logo" className="h-16 w-16 mr-2" />
