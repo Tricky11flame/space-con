@@ -36,3 +36,157 @@
 .nav4:hover::before{
     @apply scale-100 origin-left
 }
+
+
+@font-face {
+    font-family: "akira_expanded";
+    src: url("/fonts/akira_expanded/Akira Expanded Demo.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "death_star";
+    src: url("/fonts/death-star/Death Star.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "ethnocentric";
+    src: url("/fonts/ethnocentric/ethnocentric\ rg.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "ethnocentric";
+    src: url("/fonts/ethnocentric/ethnocentric\ rg\ it.otf");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: "lemon_milk";
+    src: url("/fonts/lemon_milk/LEMONMILK-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "lemon_milk";
+    src: url("/fonts/lemon_milk/LEMONMILK-Light.otf");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "lemon_milk";
+    src: url("/fonts/lemon_milk/LEMONMILK-Medium.otf");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "lemon_milk";
+    src: url("/fonts/lemon_milk/LEMONMILK-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "lemon_milk";
+    src: url("/fonts/lemon_milk/LEMONMILK-BoldItalic.otf");
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: "lemon_milk";
+    src: url("/fonts/lemon_milk/LEMONMILK-LightItalic.otf");
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: "lemon_milk";
+    src: url("/fonts/lemon_milk/LEMONMILK-MediumItalic.otf");
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: "lemon_milk";
+    src: url("/fonts/lemon_milk/LEMONMILK-RegularItalic.otf");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: "montserrat";
+    src: url("/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: "montserrat";
+    src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+  
+@media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-start-rgb: 0, 0, 0;
+      --background-end-rgb: 0, 0, 0;
+    }
+  }
+  
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+  
+  /* Add these in your global CSS file */
+@keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Tailwind classes for animations */
+.animate-slideUp {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+  
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  

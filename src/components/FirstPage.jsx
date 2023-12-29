@@ -2,6 +2,7 @@
 import { Router } from "next/router";
 import React, { useState } from 'react';
 import "../app/globals.css"
+import Link from "next/link";
 
 const FirstPage = () => {
   const [isMobileMenuVisible, setMobileMenuVisibility] = useState(false);
@@ -34,11 +35,12 @@ const FirstPage = () => {
             <a href="schedule" className="nav4 transition-all duration-300 hover:scale-110">SCHEDULE</a>
             <a href="teams" className="nav4 transition-all duration-300 hover:scale-110">OUR TEAM</a>
             <a href="about" className="nav4 transition-all duration-300 hover:scale-110">ABOUT US</a>
+            <Link className="nav4 transition-all duration-300 hover:scale-110" href="/signup"><button>SignUp</button></Link>
+            <Link className="nav4 transition-all duration-300 hover:scale-110" href="/login"><button>LogIn</button></Link>
         </div>
 
         {/* Sign Up/Login Buttons (Desktop) */}
         <div className="hidden lg:flex mr-8 space-x-6 text-lg">
-          {/* Buttons */}
         </div>        
       </nav>
       </div>
