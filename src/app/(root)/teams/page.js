@@ -2,7 +2,7 @@
 // "use client"
 
 import Link from 'next/link';
-import TeamSlider from '../../../components/TeamSlider';
+// import TeamSlider from '../../../components/TeamSlider';
 // import RootLayout from '../layout.js';
 
 // const teams = [
@@ -30,14 +30,13 @@ const Page = () => {
       <div className="mx-4 my-8">
         <h2 className="text-2xl font-bold mb-4">Teams</h2>
         {/* <TeamSlider teams={teams} handleTeamClick={handleTeamClick} selectedTeam={selectedTeam} /> */}
-        <Link href="/teams/[dept]" as="/teams/tech">
+        <Link href="/teams/tech">
         Technology
-      </Link>
-      <Link href="/teams/[dept]" as="/teams/logi">
-        Logistics
-      </Link>
-
-      <div>{TEAM_DB['tech']}</div>
+        </Link>
+        <Link href="/teams/logi">
+          Logistics
+        </Link>
+        <div>{TEAM_DB['tech']}</div>
       </div>
   );
 };
