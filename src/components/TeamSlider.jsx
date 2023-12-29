@@ -78,33 +78,33 @@ export default TeamSliders
 const data = [
   {
     title: "Tech Team",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
+    posterUrl: "team/tech.png", // Use the imported image
     registrationLink: "/teams/tech",
   },
   {
     title: "Lgistics Team",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
+    posterUrl: "team/tech.png", // Use the imported image
     registrationLink: "/teams/logi",
   },
   {
     title: "Event M. Team",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
+    posterUrl: "team/tech.png", // Use the imported image
     registrationLink: "/teams/em",
   },
   {
     title: "Production Team",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
+    posterUrl: "team/tech.png", // Use the imported image
     registrationLink: "/teams/tech",
   },
   {
     title: "Content Team",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
+    posterUrl: "team/design.png", // Use the imported image
     registrationLink: "/teams/content",
   },
 
   {
     title: "PR Team",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
+    posterUrl: "team/design.png", // Use the imported image
     registrationLink: "/teams/pr",
   },
 
