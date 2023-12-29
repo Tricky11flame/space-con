@@ -1,3 +1,4 @@
+// // app/(root)/signup
 "use client";
 import React, { useState, useEffect } from "react";
 import Ripples from "react-ripples";
