@@ -11,12 +11,14 @@ const FirstPage = () => {
   };
 
   return (
+    <>
     <div className="bg-spaceCon-opbg text-white font-spaceCon min-h-screen">
       {/* Navbar */}
-      <nav className="flex items-center justify-between p-0 fixed w-[100%] py-4 z-50 border-b-2 bg-spaceCon-secondary">
+      <div className=" ">
+      <nav className="flex items-center justify-between p-0 fixed w-[100%] z-50 border-b-2 border-slate-950 bg-opacity-80 backdrop-blur-lg bg-gray-700 bg-clip-padding backdrop-filter ">
         {/* Logo */}
         <div className="flex items-center ml-4">
-          <img src="SpaceConLogo.svg" alt="Logo" className="h-16 w-16 mr-2" />
+          <img src="SpaceConLogo.svg" alt="Logo" className="h-12 w-12 m-2 rounded-2xl my-4 " />
         </div>
 
         {/* Hamburger Menu (Mobile) */}
@@ -39,7 +41,7 @@ const FirstPage = () => {
           {/* Buttons */}
         </div>        
       </nav>
-
+      </div>
       {/* Mobile Menu */}
       <div
         id="mobile-menu"
@@ -55,19 +57,22 @@ const FirstPage = () => {
         </div>
       </div>
 
+      <div>
       {/* Background Section */}
       <div className="fixed w-[100%]"><img src="bg-img-blur.jpg" alt="" className="-z-50 w-[100%]" /></div>
       <div className="fixed flex justify-center"><img src="bg-img.jpg" alt="" className="-z-49 w-[100%] " loading="lazy" /></div>
       <div className="fixed z-1 w-[45%]"><img src="bg-img-2.png" alt="" className="absolute -left-4 astronaut top-[160px] ml-16" /></div>
 
       {/* Text Section */}
-      <section className="flex flex-col items-center justify-center relative top-16 md:top-32 lg:top-64 lg:flex-row lg:justify-end">
+      <section className=" z-40 flex flex-col items-center justify-center relative top-16 md:top-32 lg:top-64 lg:flex-row lg:justify-end">
         <div className="text-center md:text-right mx-4 md:mx-0 lg:text-right lg:mr-36">
           <h1 className="text-4xl font-extrabold mt-8 lg:mt-0 mb-4 p-4 px-6 rounded-2xl lg:text-7xl">Explore the Universe</h1>
           <p className="text-sm lg:text-lg mb-8 px-2 lg:pl-0 lg:pr-6">Discover the wonders of space with our amazing content.</p>
         </div>
       </section>
     </div>
+    </div>
+    </>
   );
 };
 

@@ -2,16 +2,19 @@
 // src/app/(root/)page.js
 // import Footer from '@/components/Footer';
 import FirstPage from '@/components/FirstPage';
+import ProgSlider from '@/components/ProgSlider';
 import Sliders from '@/components/Sliders';
+import TeamSliders from '@/components/TeamSlider';
 // import Sliders from '@/components/Sliders';
 
 export default function Home(){
   return (<>
     <FirstPage/>
     {/* <Footer/> */}
-    <Sliders/>
     {/* <StyledSlider/> */}
-
+    <Sliders/>
+    <TeamSliders/>
+    <ProgSlider/>
     </>
   )
 }

@@ -1,0 +1,31 @@
+.underline-animation::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffd1e3; /* Or any color you prefer */
+  transition: width 0.5s;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+/* CSS (you can add this in your stylesheet) */
+.alert-box {
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  background-color: #ffd1e3; /* Petal Pink */
+  color: #392467; /* Mystic Plum */
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+.alert-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
