@@ -9,7 +9,7 @@ import TeamSliders from '@/components/TeamSlider';
 
 export default function Home(){
   return (<>
-    <FirstPage/>
+    <FirstPage  />
     {/* <Footer/> */}
     {/* <StyledSlider/> */}
     <Sliders/>

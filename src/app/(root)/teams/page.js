@@ -25,6 +25,7 @@ import Link from 'next/link';
   //     };  
 
 import { TEAM_DB } from '../data';
+import CustomTeam2 from '@/components/CustomTeam2';
 const Page = () => {
   return (
       <div className="mx-4 my-8">
@@ -36,6 +37,7 @@ const Page = () => {
         <Link href="/teams/logi">
           Logistics
         </Link>
+        <CustomTeam2/>
         <div>{TEAM_DB['tech']}</div>
       </div>
   );
