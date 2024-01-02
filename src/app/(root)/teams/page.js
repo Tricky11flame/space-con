@@ -26,20 +26,15 @@ import Link from 'next/link';
 
 import { TEAM_DB } from '../data';
 import CustomTeam2 from '@/components/CustomTeam2';
+import Navbar from '@/components/Navbar';
 const Page = () => {
   return (
       <div className="mx-4 my-8">
-        <h2 className="text-2xl font-bold mb-4">Teams</h2>
-        {/* <TeamSlider teams={teams} handleTeamClick={handleTeamClick} selectedTeam={selectedTeam} /> */}
-        <Link href="/teams/tech">
-        Technology
-        </Link>
-        <Link href="/teams/logi">
-          Logistics
-        </Link>
-        <CustomTeam2/>
+        <Navbar/>
         <div>{TEAM_DB['tech']}</div>
       </div>
+
+      
   );
 };
 

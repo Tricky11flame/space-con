@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { applyActionCode, getAuth } from "firebase/auth";
-import { firebaseApp } from "@/firebase/firebaseConfig";
+import { firebaseApp } from "@/lib/firebaseConfig";
 import "./style.css";
 const EmailVerification = () => {
   const [isLoading, setIsLoading] = useState(true);

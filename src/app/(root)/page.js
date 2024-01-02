@@ -2,6 +2,7 @@
 // src/app/(root/)page.js
 // import Footer from '@/components/Footer';
 import FirstPage from '@/components/FirstPage';
+import Footer from '@/components/Footer';
 import ProgSlider from '@/components/ProgSlider';
 import Sliders from '@/components/Sliders';
 import TeamSliders from '@/components/TeamSlider';

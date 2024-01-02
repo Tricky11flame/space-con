@@ -6,8 +6,9 @@ import Ripples from "react-ripples";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import "./styles.css";
-import { firebaseApp } from "@/firebase/firebaseConfig";
+import { firebaseApp } from "@/lib/firebaseConfig";
 import Loader from "@/components/loader";
+import Navbar from "@/components/Navbar";
 
 export default function SignIn() {
   const [formData, setFormData] = useState({
@@ -87,6 +88,8 @@ export default function SignIn() {
   );
 
   return (
+    <>
+    <Navbar/>
     <div className="relative h-screen w-full">
       <div className="absolute h-full w-full bg-black/30 backdrop-blur-sm"></div>
       <div className="flex items-center justify-center min-h-screen bg-cover bg-center bg-space-background">
@@ -129,5 +132,6 @@ export default function SignIn() {
         </div>
       </div>
     </div>
+  </>
   );
 }

@@ -9,9 +9,10 @@ import {
 } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import "./styles.css";
-import { firebaseApp } from "@/firebase/firebaseConfig";
+import { firebaseApp } from "@/lib/firebaseConfig";
 import { doc, setDoc } from "firebase/firestore";
-import { firestore } from "@/firebase/firebaseConfig";
+import { firestore } from "@/lib/firebaseConfig";
+import Navbar from "@/components/Navbar";
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -170,9 +171,11 @@ export default function Signup() {
   );
 
   return (
-    <div className="relative h-screen w-full">
-      <div className="absolute h-full w-full bg-black/30 backdrop-blur-sm"></div>
-      <div className="flex items-center justify-center min-h-screen bg-cover bg-center bg-space-background">
+    <>
+    <Navbar/>
+    <div className="relative h-screen w-full ">
+      <div className="absolute h-full w-full bg-black/30 backdrop-blur-sm " ></div>
+      <div className="flex items-center justify-center min-h-screen bg-cover bg-center bg-space-background pt-20">
         {alert.show && <div className={alertClass}>{alert.message}</div>}
         {userCreated && !emailVerified ? (
           <div className="p-6 bg-mystic-plum rounded-lg shadow-lg animate-slideUp">
@@ -243,5 +246,6 @@ export default function Signup() {
         )}
       </div>
     </div>
+    </>
   );
 }

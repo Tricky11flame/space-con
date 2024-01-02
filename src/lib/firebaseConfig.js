@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 export const firebaseConfig = {
   apiKey: "AIzaSyBJl434DkkMfmLgWdOMbnNI28ZWmboA1JA",
   authDomain: "nakshatra-1b99e.firebaseapp.com",
@@ -11,9 +12,11 @@ export const firebaseConfig = {
   measurementId: "G-P3Q30G219Z",
 };
 
+
 // Initialize Firebase
 export const firebaseApp = initializeApp(firebaseConfig);
 export const firestore = getFirestore(firebaseApp);
+export const auth = getAuth(firebaseApp);
 // setPersistence(auth, browserLocalPersistence)
 //   .then(() => {
 //     // Existing sign-in process
