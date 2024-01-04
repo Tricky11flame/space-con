@@ -17,19 +17,19 @@ import { Router } from "next/navigation";
 import "../globals.css"
 import Footer from "@/components/Footer";
 
-const RootLayout= ({
-  children}) => {
+const RootLayout = ({
+  children }) => {
   return (
     <html lang="en">
       <body>
-      {children}
-      <Footer/>
-    </body>
+        {children}
+        <Footer />
+      </body>
       {/* <body className='bg-gradient-to-r from-slate-800 to-violet-800 '>
       <Navbar2 />
       <div className="container mx-auto my-8 mt-[256px] ">{children}</div>
       </body> */}
-      
+
     </html>
   );
 };

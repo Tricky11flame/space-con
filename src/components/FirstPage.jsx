@@ -19,7 +19,7 @@ const FirstPage = ({bar=true}) => {
       <div className="main">
       {/* Background Section */}
       <div className="fixed w-[100%]"><img src="bg-img-blur.jpg" alt="" className="-z-50 w-[100%] " /></div>
-      <div className="fixed flex justify-center"><img src="bg-img.jpg" alt="" className="-z-49 w-[100%] " loading="lazy" /></div>
+      <div className="fixed flex justify-center bg-no-repeat w-full"><img src="bg-img.jpg" alt="" className="-z-49 w-[100%] " loading="lazy" /></div>
       <div className="fixed z-1 w-[45%]"><img src="bg-img-2.png" alt="" className="absolute -left-4 astronaut top-[160px] ml-16" /></div>
 
       {/* Text Section */}
