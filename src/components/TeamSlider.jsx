@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
 import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Link from 'next/link';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-const TeamSliders = () => {   
+const TeamSlider = () => {
+
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 4000,
-    autoplaySpeed:0,
+    speed: 2000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     responsive: [
       {
@@ -44,75 +45,134 @@ const TeamSliders = () => {
         }
       },
     ]
-    
   };
 
+  const [toggle , setToggle] = useState(0);
 
+  function updateToggle(id){
+    setToggle(id);
+  }
+
+  const nav = ["All" , "Lead" , "Tech" , "Content" , "Pr" , "Design"]
 
   return (
-    <div className='m-auto xl:px-16 sm:px-10 px-8 md:px-10'>
-      <div className='mt-20 bg-opacity-30 backdrop-blur-lg bg-gray-700 bg-clip-padding backdrop-filter'>
-      <SlickSlider {...settings}>
 
-         {data.map((d) => (
-           <Link key={d.title} href={d.registrationLink} className='flex flex-col justify-center items-center text-black shadow-lg '>
-            <div className='flex flex-col justify-center items-center p-5'>
-              <div className='w-[240px] h-[240px]'>
-                <img src={d.posterUrl} className='rounded-xl' />
-              </div>
-              <div className='gap-4 p-4 flex flex-col justify-center items-center align-middle'>
-                <p className='text-xl font-semibold'>{d.title}</p>
-              </div>
-            </div>
-          </Link>
-         ))}
+     <div className='lg:p-20 md:p-16 p-10 w-full z-100 bg-spaceGif text-white flex flex-col'>
 
-         </SlickSlider>
+      <div className='flex justify-center w-full items-center'>
+        <div className=''>
+          <h1 className='uppercase font-black text-center font-spaceCon block py-0 px-4 nav4 transition-all duration-300 hover:scale-110 text-[60px]'>The Team</h1>
+        </div>
       </div>
+
+      <ul className='flex justify-between md:px-24 lg:mt-8 mt-6 pb-10'>
+        {nav.map((item, index) => (
+          <li key={index} onClick={() => updateToggle(index)} className='
+          py-0 px-4 nav4 transition-all duration-300 uppercase hover:scale-110] cursor-pointer' style={{marginRight: "10px"}}>{item}</li>
+        ))} 
+      </ul>
+
+      {/* All team members */}
+      <div className='bg-opacity-30 backdrop-blur-lg bg-gray-700 bg-clip-padding backdrop-filter rounded-xl '>    
+      {toggle === 0 && (
+  <SlickSlider {...settings}>
+    {cardData.map((cardData, index) => (
+      <div className='w-[300px] h-[300px] m-[20px] overflow-hidden shadow-lg group shadow-indigo-500/40 rounded-xl flex justify-center align-middle relative'>
+        <img src={cardData.img} className='w-[100%] h-[100%] p-4 overflow-hidden shadow-lg group shadow-indigo-500/40 rounded-xl flex justify-center items-center relative object-cover' alt="" />
+
+          {/* details appears on hover */}
+
+        <div className='absolute bg-spaceGif w-[100%] h-[100%] bottom-0 flex justify-center group-hover:opacity-100 align-middle bg-black shadow-md rounded-xl delay-150 opacity-0  duration-500'>
+          <div className='my-auto'>
+          <h3 className='text-[23px] font-[500]  text-white mt-[10px]'>{cardData.name}</h3>
+          <h3 className='text-[12px] font-light text-center '>{cardData.designation}</h3>
+
+          <div>
+             <ul className='flex justify-center mt-5 text-[25px]'>
+                <li><FaGithub className='text-[#5D3587] mr-3'/></li>
+                <li><FaInstagram className='text-[#5D3587] mr-3'/></li>
+                <li><FaLinkedin className='text-[#5D3587] mr-3'/></li>
+             </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </SlickSlider>
+)}
+
+</div>
+
+      {/* Design members and here */}
+
     </div>
   )
 }
 
-export default TeamSliders
+export default TeamSlider;
 
-const data = [
+
+
+const cardData  = [
   {
-    title: "Tech Team",
-    posterUrl: "team/tech.png", // Use the imported image
-    registrationLink: "/teams/tech",
-  },
-  {
-    title: "Lgistics Team",
-    posterUrl: "team/tech.png", // Use the imported image
-    registrationLink: "/teams/logi",
-  },
-  {
-    title: "Event M. Team",
-    posterUrl: "team/tech.png", // Use the imported image
-    registrationLink: "/teams/em",
-  },
-  {
-    title: "Production Team",
-    posterUrl: "team/tech.png", // Use the imported image
-    registrationLink: "/teams/tech",
-  },
-  {
-    title: "Content Team",
-    posterUrl: "team/design.png", // Use the imported image
-    registrationLink: "/teams/content",
+     img : './team/tech.png',
+     name : 'Ayush Jha',
+     designation : "President",
+     linkedin : "#",
+     instagram : "#",
   },
 
   {
-    title: "PR Team",
-    posterUrl: "team/design.png", // Use the imported image
-    registrationLink: "/teams/pr",
+    img : './team/content.png',
+    name : 'Ayush Jha',
+    designation : "President",
+    linkedin : "#",
+    instagram : "#",
+ },
+{
+img : './team/design.png',
+name : 'Ayush Jha',
+designation : "President",
+linkedin : "#",
+instagram : "#",
+},
+
+{
+  img : './team/tech.png',
+  name : 'Ayush Jha',
+  linkedin : "#",
+  designation : "President",
+  instagram : "#",
+},
+
+{
+  img : './team/design.png',
+  name : 'Ayush Jha',
+  linkedin : "#",
+  designation : "President",
+  instagram : "#",
   },
 
   {
-    title: "Sponsorship Team",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
-    registrationLink: "/teams/sponi",
-  },
+    img : './team/content.png',
+    name : 'Ayush Jha',
+    designation : "President",
+    linkedin : "#",
+    instagram : "#",
+    },
 
-  // Add more events here
+    {
+      img : './team/design.png',
+      name : 'Ayush Jha',
+      designation : "President",
+      linkedin : "#",
+      instagram : "#",
+   },
+    {
+      img : './team/tech.png',
+      name : 'Ayush Jha',
+      designation : "President",
+      linkedin : "#",
+      instagram : "#",
+      },
 ];

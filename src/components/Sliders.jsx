@@ -2,6 +2,9 @@ import React from 'react'
 import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import './Slider.css'
+import { SpaceIcon } from 'lucide-react';
+import "../app/globals.css"
 
 const Sliders = () => {   
   const settings = {
@@ -50,80 +53,93 @@ const Sliders = () => {
 
 
   return (
-    <div className='m-auto xl:px-16 sm:px-10 px-8 md:px-10'>
-      <div className='mt-20 bg-opacity-30 backdrop-blur-lg bg-gray-700 bg-clip-padding backdrop-filter'>
+    <>
+    <div className='flex justify-center bg-spaceGif w-full items-center'>
+      <div className=''>
+        <h1 className='uppercase font-black text-center font-spaceCon block py-1 px-4 nav4 transition-all duration-300 hover:scale-110 text-[60px]'> Events</h1>
+      </div>
+      </div>
+    
+    <div className='m-auto xl:px-16 sm:px-10 px-8 lg:px-10 md:px-10'>
+
+      <div className='mt-10 bg-opacity-30 backdrop-blur-lg bg-gray-700 bg-clip-padding backdrop-filter rounded-xl'>
+        
+      
       <SlickSlider {...settings}>
+    {cardData.map((cardData, index) => (
+      <div className=' p-4 m-[20px] overflow-hidden shadow-lg group shadow-indigo-500/40 rounded-xl flex justify-center items-center relative'>
+        <img src={cardData.posterUrl} className='min-w-[250px] rounded-lg min-h-[250px] object-cover' alt="" />
+        
 
-         {data.map((d) => (
-           <div key={d.title} className='flex flex-col justify-center items-center text-black  shadow-lg '>
-            <div className=''>
-            <div className='flex flex-col justify-center items-center p-5'>
-              <div className='w-[240px] h-[240px]'>
-                <img src={d.posterUrl} className='rounded-2xl' />
-              </div>
+          {/* details appears on hover */}
 
-              <div className='gap-4 p-4 flex flex-col justify-center items-center align-middle'>
-                <p className='text-xl font-semibold'>{d.title}</p>
-                <p>{d.description}</p>
-                <button className='bg-spaceCon-tertiary text-white text-lg px-6 py-1 rounded-md '><a href={d.registrationLink}>Register</a></button>
-              </div>
-            </div>
-            </div>
+        <div className="absolute left-0 w-[100%] h-[100%] items-center p-5 bottom-0 flex justify-center group-hover:opacity-100 align-middle shadow-md rounded-xl bg-black delay-150 opacity-0  duration-500">
+          <div>
+            <img className='w-[300px] h-[300px] relative object-cover' src="https://i.pinimg.com/originals/cf/ec/88/cfec8819d8376a57c86e3c6e53ed618e.gif" alt=""  style={{background : "rgba(0 , 0, 0, 0.75)"}}/>
           </div>
-         ))}
-
-         </SlickSlider>
+          <div className='my-auto absolute flex flex-col items-center justify-center'>
+          <p className='text-xl font-semibold uppercase font-spaceCon'>{cardData.title}</p>
+                <p className='text-center pt-4 text-sm px-3 items-center'>{cardData.description}</p>
+                <button className='bg-spaceCon-tertiary mt-6 text-white text-lg px-6 py-1 rounded-md'><a href={cardData.registrationLink}>Register</a></button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </SlickSlider>
       </div>
     </div>
+
+    </>
   )
 }
 
 export default Sliders
 
-const data = [
+
+const cardData = [
   {
-    title: "Event Name",
-    description: "Description for Event 1",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
+    title: "Smriti Irani",
+    description: "Smriti Zubin Irani is an Indian politician and former actress.",
+    posterUrl: "https://sp-admin.moodi.org/get_event_image?img=1702243692846.jpeg", // Use the imported image
     registrationLink: "#",
   },
   {
-    title: "Event Name",
-    description: "Description for Event 2",
-    posterUrl: "https://moodi.org/static/media/ps_blog.210fe6cb983bc590df9f.png", // Use the imported image
+    title: "Electro-Funk Nite",
+    description: "Akash Ahuja is a New York-based Indian musical artist.",
+    posterUrl: "https://sp-admin.moodi.org/get_event_image?img=1702807736263.png", // Use the imported image
     registrationLink: "https://example.com/register2",
   },
   {
-    title: "Event Name",
-    description: "Description for Event 3",
-    posterUrl: "https://moodi.org/static/media/cs.e3de83627554a897efdd.png", // Use the imported image
+    title: "Pop Nite",
+    description: "Renowned for their versatility, Salim and Sulaiman Merchant stand among India's",
+    posterUrl: "https://sp-admin.moodi.org/get_event_image?img=1702223157191.png", // Use the imported image
     registrationLink: "#",
   },
   {
-    title: "Event Name",
-    description: "Description for Event 4",
-    posterUrl: "https://moodi.org/static/media/ap.8bf6c591e6a445576239.png", // Use the imported image
-    registrationLink: "#",
-  },
-
-  {
-    title: "Event Name",
-    description: "Description for Event 5",
-    posterUrl: "https://moodi.org/static/media/si.a84f8f5439189f789f9f.png", // Use the imported image
+    title: "Euphonic Nite",
+    description: "Mohit Chauhan, a renowned playback singer in the Indian film industry, ",
+    posterUrl: "https://sp-admin.moodi.org/get_event_image?img=1702587080356.png", // Use the imported image
     registrationLink: "#",
   },
 
   {
-    title: "Event Name",
-    description: "Description for Event 6",
-    posterUrl: "https://moodi.org/static/media/pt.28e02965a49796169280.png", // Use the imported image
+    title: "Lost Stories",
+    description: "Lost Stories, envisioned by an artist, is a captivating visual masterpiece that encapsulates the anthology's essence.",
+    posterUrl: "https://sp-admin.moodi.org/get_event_image?img=1702368420500.png", // Use the imported image
     registrationLink: "#",
   },
 
   {
-    title: "Event 7",
-    description: "Description for Event 7",
-    posterUrl: "https://moodi.org/static/media/vg.4fd025a0acb7e5b5c9e9.png", // Use the imported image
+    title: "Bhaskar Collectives",
+    description: "Anand Bhaskar Collectives is an entity, possibly a musical group led by Anand Bhaskar, a ",
+    posterUrl: "https://sp-admin.moodi.org/get_event_image?img=1702807038287.png", // Use the imported image
+    registrationLink: "#",
+  },
+
+  {
+    title: "Electro-Funk Nite",
+    description: "Jay Sean is a highly acclaimed British R&B singer and songwriter. Having won multiple awards, ",
+    posterUrl: "https://sp-admin.moodi.org/get_event_image?img=1702212892081.png", // Use the imported image
     registrationLink: "#",
   },
   // Add more events here
