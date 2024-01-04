@@ -30,11 +30,19 @@
 }
 
 .nav4::before{
-    @apply content-[''] bg-spaceCon-tertiary h-[3px] w-[100%] left-0 -bottom-[5px] rounded-xl absolute transition-transform duration-500 origin-right scale-0
+    @apply content-[''] bg-spaceCon-tertiary h-[3px] w-[100%] left-0 -bottom-[5px] rounded-xl absolute transition-transform duration-300 origin-right scale-0
 }
 
 .nav4:hover::before{
-    @apply scale-100 origin-left
+    @apply scale-110 origin-left
+}
+
+.nav4::after{
+    @apply content-[''] bg-spaceCon-tertiary h-[3px] w-[100%] right-0 -top-[5px] rounded-xl absolute transition-transform duration-300 origin-left scale-0
+}
+
+.nav4:hover::after{
+    @apply scale-110 origin-right
 }
 
 

@@ -5,6 +5,6 @@
 	</defs>
 	<style>
 	</style>
-	<rect width="1080" height="1080" id="Color Fill 1" style="fill: #000000"/>
+	<rect width="1080" height="1080" id="Color Fill 1" style="fill: #000"/>
 	<use id="Layer 1" href="#img1" x="150" y="167"/>
 </svg>
