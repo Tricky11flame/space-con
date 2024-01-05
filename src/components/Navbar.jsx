@@ -29,17 +29,17 @@ const Navbar = () => {
 
           {/* Menu Items (Desktop) */}
           <div className="hidden lg:flex space-x-6 text-lg ml-4">
-            <Link href="/" className="nav4 transition-all duration-300 hover:scale-110">HOME</Link>
-            <Link href="/events" className="nav4 transition-all duration-300 hover:scale-110">EVENTS</Link>
-            <Link href="/schedule" className="nav4 transition-all duration-300 hover:scale-110">SCHEDULE</Link>
-            <Link href="/about" className="nav4 transition-all duration-300 hover:scale-110">ABOUT US</Link>
+            <Link href="/" className="nav4 transition-all duration-300 ">HOME</Link>
+            <Link href="/events" className="nav4 transition-all duration-300 ">EVENTS</Link>
+            <Link href="/schedule" className="nav4 transition-all duration-300 ">SCHEDULE</Link>
+            <Link href="/about" className="nav4 transition-all duration-300 ">ABOUT US</Link>
           </div>
 
           {/* Sign up Login */}
           <div className='hidden lg:flex gap-5 text-lg mr-8'>
 
-            <Link className="transition-all duration-300 hover:scale-110" href="/signup"><button className='px-3 py-1 rounded-3xl bg-spaceCon-tertiary transition-all duration-500 hover:border-2 hover:border-spaceCon-tertiary hover:bg-transparent'>SIGN UP</button></Link>
-            <Link className="transition-all duration-300 hover:scale-110" href="/login"><button className='bg-spaceCon-tertiary px-3 py-1 rounded-3xl hover:bg-transparent hover:border-2 hover:border-spaceCon-tertiary'>LOGIN</button></Link>
+            <Link className="transition-all duration-150 hover:scale-110" href="/signup"><button className='px-3 py-1 rounded-3xl bg-spaceCon-tertiary transition-all duration-500 hover:border-2 hover:border-spaceCon-tertiary hover:bg-transparent'>SIGN UP</button></Link>
+            <Link className="transition-all duration-150 hover:scale-110" href="/login"><button className='bg-spaceCon-tertiary px-3 py-1 rounded-3xl hover:bg-transparent hover:border-2 hover:border-spaceCon-tertiary'>LOGIN</button></Link>
 
           </div>
         </nav>
@@ -49,10 +49,11 @@ const Navbar = () => {
         id="mobile-menu"
         className={`lg:hidden ${isMobileMenuVisible ? '' : 'hidden'} bg-gray-700/40 text-center w-[100%] mt-[80px] fixed z-50 backdrop-blur-lg`}
       >
-        <a href="events" className="block py-2 px-4 nav-link hover:bg-purple-700 border-b-2">EVENTS</a>
-        <a href="schedule" className="block py-2 px-4 nav-link hover:bg-purple-700 border-b-2">SCHEDULE</a>
-        <a href="about" className="block py-2 px-4 nav-link hover:bg-purple-700 border-b-2">ABOUT US</a>
-        <div className="flex justify-center p-2 gap-16">
+        <Link href="/" className="block py-2 px-4 nav-link hover:bg-[#1d2335] border-b-2 border-t-2">HOME</Link>
+        <Link href="/events" className="block py-2 px-4 nav-link hover:bg-[#1d2335] border-b-2">EVENTS</Link>
+        <Link href="/schedule" className="block py-2 px-4 nav-link hover:bg-[#1d2335] border-b-2">SCHEDULE</Link>
+        <Link href="/about" className="block py-2 px-4 nav-link hover:bg-[#1d2335] border-b-2">ABOUT US</Link>
+        <div className="flex justify-center p-2 gap-16 border-b-2">
           <button className="btn hover:bg-transparent bg-spaceCon-tertiary px-2 rounded-xl uppercase shadow-3xl"><Link href="/signup">SignUp</Link></button>
           <button className="btn hover:bg-transparent bg-spaceCon-tertiary px-2 rounded-xl uppercase shadow-3xl"><Link href="/login">Login</Link></button>
         </div>

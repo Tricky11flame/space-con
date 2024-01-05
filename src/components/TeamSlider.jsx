@@ -14,6 +14,7 @@ const TeamSliders = () => {
     speed: 4000,
     autoplaySpeed:0,
     cssEase: "linear",
+    arrows: false,
     responsive: [
       {
         breakpoint: 480,

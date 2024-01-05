@@ -173,8 +173,8 @@ export default function Signup() {
   return (
     <>
     <Navbar/>
-    <div className="relative h-screen w-full ">
-      <div className="absolute h-full w-full bg-black/30 backdrop-blur-sm " ></div>
+    <div className="relative min-h-screen w-full ">
+      <div className="absolute h-full w-full bg-black/30 backdrop-blur-sm" ></div>
       <div className="flex items-center justify-center min-h-screen bg-cover bg-center bg-space-background pt-20">
         {alert.show && <div className={alertClass}>{alert.message}</div>}
         {userCreated && !emailVerified ? (

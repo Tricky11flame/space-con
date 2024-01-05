@@ -18,9 +18,9 @@ const FirstPage = ({bar=true}) => {
       {bar?<Navbar/>:''}
       <div className="main">
       {/* Background Section */}
-      <div className="fixed w-[100%]"><img src="bg-img-blur.jpg" alt="" className="-z-50 w-[100%] " /></div>
-      <div className="fixed flex justify-center bg-no-repeat w-full"><img src="bg-img.jpg" alt="" className="-z-49 w-[100%] " loading="lazy" /></div>
-      <div className="fixed z-1 w-[45%]"><img src="bg-img-2.png" alt="" className="absolute -left-4 astronaut top-[160px] ml-16" /></div>
+      <div className="fixed w-full h-full bg-no-repeat"><img src="/background/home-bg-blur.png" alt="" className="-z-50 w-full h-full" /></div>
+      <div className="fixed flex justify-center bg-no-repeat bg-contain overflow-hidden w-full h-[100svh]"><img src="/background/home-bg.png" alt="" className="-z-49 max-w-5xl lg:min-w-full h-[100svh]" loading="lazy" /></div>
+      <div className="fixed z-1 w-[45%]"><img src="/background/astronaut.png" alt="" className="absolute -left-4 astronaut top-[160px] ml-16" /></div>
 
       {/* Text Section */}
       {bar?<section className=" z-40 flex flex-col items-center justify-center relative top-24 md:top-24 lg:top-24 lg:flex-row lg:justify-end">

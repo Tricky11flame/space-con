@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 const ProgSlider = () => {
   const settings = {
+    arrows: false,
+    rtl: true,
     dots: false,
     infinite: true,
     slidesToShow: 4,
