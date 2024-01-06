@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex text-white justify-between items-center p-8 flex-wrap gap-8">
         <div className="h-full flex flex-col">
           <div className="mx-auto w-full">
-            <img src="../../../nk.png" alt="" className="bg-transparent mx-auto h-52" style={{ opacity: "0.8" }} />
+            <img src="team/about-team.png" alt="" className="bg-transparent mx-auto h-52" style={{ opacity: "0.8" }} />
           </div>
         </div>
         <div className="">

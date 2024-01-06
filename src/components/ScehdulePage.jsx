@@ -35,7 +35,7 @@ const SchedulePage = () => {
     
         {events.map((event, index) => (
           <div key={index} className="event-card mb-8 mx-4 border-4 rounded-[0.85rem] border-spaceCon-quaternary pb-0.5 bg-spaceCon-primary bg-opacity-20 backdrop-blur-lg bg-clip-padding backdrop-filter">
-            <img src={event.image} alt={event.name} className="w-full h-auto rounded-xl rounded-b-none" />
+            <img src={event.image} alt={event.name} className="w-[400px] h-[400px] rounded-xl rounded-b-none" />
             <div className="mt-4 p-4 pt-0">
               <h2 className="text-2xl font-semibold mb-2 text-spaceCon-quaternary">{event.name}</h2>
               <div className="text-spaceCon-quaternary mb-2">
@@ -44,7 +44,7 @@ const SchedulePage = () => {
               <div className="text-spaceCon-quaternary mb-2">
                 <strong>Location:</strong> {event.location}
               </div>
-              <button className="bg-spaceCon-primary text-white px-4 py-2 rounded-md">Register</button>
+              <button className="bg-spaceCon-primary border-2 border-spaceCon-primary text-white px-4 py-2 rounded-md transition-all duration-200 hover:bg-transparent hover:border-2 hover:border-spaceCon-tertiary">Register</button>
             </div>
           </div>
         ))}

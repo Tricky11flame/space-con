@@ -1,7 +1,7 @@
 export default function EventCard({
   event = {
     title: "Sample Event",
-    posterUrl: "https://placekitten.com/400/300",
+    posterUrl: "events/obsteria.png",
     description:
       "Join us for an exciting and informative event where experts from various fields will share their insights. Explore cutting-edge technologies, engage in thought-provoking discussions, and connect with like-minded individuals. Don't miss this opportunity to broaden your horizons!",
     date: "January 1, 2023",

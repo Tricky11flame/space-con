@@ -14,6 +14,7 @@ const Sliders = () => {
     autoplaySpeed:0,
     cssEase: "linear",
     rtl:true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 480,
@@ -83,46 +84,46 @@ export default Sliders
 const data = [
   {
     title: "Event 1",
-    description: "Have you ever wondered what would have happened if the CERN Super Collider had somehow created a black hole ? Or what would Earth look like if an advanced Alien civilization had wreaked havoc upon our planet ? Does the very thought of us finding alien life or them finding us gives you goosebumps? If all these things keep you up at night, then show your skills to prove such make believe scenarios.",
+    description: "Description for Event",
     posterUrl: "/events/obsteria.png", // Use the imported image
     registrationLink: "/",
   },
   {
     title: "Event 2",
-    description: "Have you ever wondered what would have happened if the CERN Super Collider had somehow created a black hole ? Or what would Earth look like if an advanced Alien civilization had wreaked havoc upon our planet ? Does the very thought of us finding alien life or them finding us gives you goosebumps? If all these things keep you up at night, then show your skills to prove such make believe scenarios.",
+    description: "Description for Event",
     posterUrl: "/events/ojingo.png", // Use the imported image
     registrationLink: "https://example.com/register2",
   },
   {
     title: "Event 3",
-    description: "Have you ever wondered what would have happened if the CERN Super Collider had somehow created a black hole ? Or what would Earth look like if an advanced Alien civilization had wreaked havoc upon our planet ? Does the very thought of us finding alien life or them finding us gives you goosebumps? If all these things keep you up at night, then show your skills to prove such make believe scenarios.",
+    description: "Description for Event",
     posterUrl: "/events/sig.png", // Use the imported image
     registrationLink: "/",
   },
   {
     title: "Event 4",
-    description: "Have you ever wondered what would have happened if the CERN Super Collider had somehow created a black hole ? Or what would Earth look like if an advanced Alien civilization had wreaked havoc upon our planet ? Does the very thought of us finding alien life or them finding us gives you goosebumps? If all these things keep you up at night, then show your skills to prove such make believe scenarios.",
+    description: "Description for Event",
     posterUrl: "/events/triathlon.png", // Use the imported image
     registrationLink: "/",
   },
 
   {
     title: "Event 5",
-    description: "Have you ever wondered what would have happened if the CERN Super Collider had somehow created a black hole ? Or what would Earth look like if an advanced Alien civilization had wreaked havoc upon our planet ? Does the very thought of us finding alien life or them finding us gives you goosebumps? If all these things keep you up at night, then show your skills to prove such make believe scenarios.",
+    description: "Description for Event",
     posterUrl: "/events/cosmic-quest.png", // Use the imported image
     registrationLink: "/",
   },
 
   {
     title: "Event 6",
-    description: "Have you ever wondered what would have happened if the CERN Super Collider had somehow created a black hole ? Or what would Earth look like if an advanced Alien civilization had wreaked havoc upon our planet ? Does the very thought of us finding alien life or them finding us gives you goosebumps? If all these things keep you up at night, then show your skills to prove such make believe scenarios.",
+    description: "Description for Event",
     posterUrl: "/events/fake-off.png", // Use the imported image
     registrationLink: "/",
   },
 
   {
     title: "Event 7",
-    description: "Have you ever wondered what would have happened if the CERN Super Collider had somehow created a black hole ? Or what would Earth look like if an advanced Alien civilization had wreaked havoc upon our planet ? Does the very thought of us finding alien life or them finding us gives you goosebumps? If all these things keep you up at night, then show your skills to prove such make believe scenarios.",
+    description: "Description for Event",
     posterUrl: "/events/space-survival.png", // Use the imported image
     registrationLink: "/",
   },
