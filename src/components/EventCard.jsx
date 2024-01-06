@@ -14,7 +14,14 @@ export default function EventCard({
   return (
     <div className="flex flex-col mb-8 bg-spaceCon-secondary bg-opacity-30 backdrop-blur-lg text-white my-6 rounded-xl shadow-lg p-6 md:p-8 md:w-1/2 lg:w-1/3 sm:w-full">
       <img src={event.posterUrl} alt={event.title} className="w-full h-auto rounded-xl mb-4" />
-      <h2 className="text-2xl font-semibold mb-2 text-spaceCon-quaternary">{event.title}</h2>
+
+      <div className="flex justify-between">
+        <h2 className="text-2xl font-semibold mb-2 text-spaceCon-quaternary">{event.title}</h2>
+        <button className="bg-spaceCon-primary border-2 border-spaceCon-primary text-white px-4 py-2 rounded-md transition-all duration-200 hover:bg-transparent hover:border-2 hover:border-spaceCon-tertiary">
+          <a href="events/1000323">Register</a>
+        </button>
+      </div>
+
       <p className="text-spaceCon-quaternary mb-2">
         <strong>Event Date:</strong> {event.date}
       </p>

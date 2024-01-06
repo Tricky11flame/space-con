@@ -1,6 +1,3 @@
-// // src/pages/events.js
-// import Navbar from '../../../components/Navbar';
-// import EventCard from '../../../components/EventCard';
 import Navbar from "@/components/Navbar";
 
 import EventCard from "@/components/EventCard";
