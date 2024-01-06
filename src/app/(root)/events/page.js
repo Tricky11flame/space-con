@@ -8,8 +8,8 @@ const Page = () => {
   return (
     <>
     <Navbar/>
-    <div className="fixed w-[100%]"><img src="bg-img-blur.jpg" alt="" className="-z-50 w-[100%]" /></div>
-    <div className="fixed flex justify-center"><img src="bg-img.jpg" alt="" className="-z-49 w-[100%] " loading="lazy" /></div>
+    <div className="fixed w-full"><img src="/background/home-bg-blur.png" alt="" className="-z-50 w-full" /></div>
+    <div className="fixed flex justify-center w-full"><img src="/background/home-bg.png" alt="" className="-z-49 w-full" loading="lazy" /></div>
       <div className="flex flex-wrap md:space-x-6 justify-center items-center py-40">
         <EventCard/>
         <EventCard/>

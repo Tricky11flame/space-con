@@ -14,6 +14,7 @@ const Sliders = () => {
     autoplaySpeed:0,
     cssEase: "linear",
     rtl:true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 480,
@@ -59,12 +60,12 @@ const Sliders = () => {
             <div className=''>
             <div className='flex flex-col justify-center items-center p-5'>
               <div className='w-[240px] h-[240px]'>
-                <img src={d.posterUrl} className='rounded-2xl' />
+                <img src={d.posterUrl} className='rounded-2xl h-[240px] w-[240px]' />
               </div>
 
               <div className='gap-4 p-4 flex flex-col justify-center items-center align-middle'>
-                <p className='text-xl font-semibold'>{d.title}</p>
-                <p>{d.description}</p>
+                <p className='text-xl text-white font-semibold'>{d.title}</p>
+                <p className='text-white'>{d.description}</p>
                 <button className='bg-spaceCon-tertiary text-white text-lg px-6 py-1 rounded-md '><a href={d.registrationLink}>Register</a></button>
               </div>
             </div>
@@ -82,49 +83,49 @@ export default Sliders
 
 const data = [
   {
-    title: "Event Name",
-    description: "Description for Event 1",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
-    registrationLink: "#",
+    title: "Event 1",
+    description: "Description for Event",
+    posterUrl: "/events/obsteria.png", // Use the imported image
+    registrationLink: "/",
   },
   {
-    title: "Event Name",
-    description: "Description for Event 2",
-    posterUrl: "https://moodi.org/static/media/ps_blog.210fe6cb983bc590df9f.png", // Use the imported image
+    title: "Event 2",
+    description: "Description for Event",
+    posterUrl: "/events/ojingo.png", // Use the imported image
     registrationLink: "https://example.com/register2",
   },
   {
-    title: "Event Name",
-    description: "Description for Event 3",
-    posterUrl: "https://moodi.org/static/media/cs.e3de83627554a897efdd.png", // Use the imported image
-    registrationLink: "#",
+    title: "Event 3",
+    description: "Description for Event",
+    posterUrl: "/events/sig.png", // Use the imported image
+    registrationLink: "/",
   },
   {
-    title: "Event Name",
-    description: "Description for Event 4",
-    posterUrl: "https://moodi.org/static/media/ap.8bf6c591e6a445576239.png", // Use the imported image
-    registrationLink: "#",
-  },
-
-  {
-    title: "Event Name",
-    description: "Description for Event 5",
-    posterUrl: "https://moodi.org/static/media/si.a84f8f5439189f789f9f.png", // Use the imported image
-    registrationLink: "#",
+    title: "Event 4",
+    description: "Description for Event",
+    posterUrl: "/events/triathlon.png", // Use the imported image
+    registrationLink: "/",
   },
 
   {
-    title: "Event Name",
-    description: "Description for Event 6",
-    posterUrl: "https://moodi.org/static/media/pt.28e02965a49796169280.png", // Use the imported image
-    registrationLink: "#",
+    title: "Event 5",
+    description: "Description for Event",
+    posterUrl: "/events/cosmic-quest.png", // Use the imported image
+    registrationLink: "/",
+  },
+
+  {
+    title: "Event 6",
+    description: "Description for Event",
+    posterUrl: "/events/fake-off.png", // Use the imported image
+    registrationLink: "/",
   },
 
   {
     title: "Event 7",
-    description: "Description for Event 7",
-    posterUrl: "https://moodi.org/static/media/vg.4fd025a0acb7e5b5c9e9.png", // Use the imported image
-    registrationLink: "#",
+    description: "Description for Event",
+    posterUrl: "/events/space-survival.png", // Use the imported image
+    registrationLink: "/",
   },
   // Add more events here
 ];

@@ -14,6 +14,7 @@ const TeamSliders = () => {
     speed: 4000,
     autoplaySpeed:0,
     cssEase: "linear",
+    arrows: false,
     responsive: [
       {
         breakpoint: 480,
@@ -61,7 +62,7 @@ const TeamSliders = () => {
                 <img src={d.posterUrl} className='rounded-xl' />
               </div>
               <div className='gap-4 p-4 flex flex-col justify-center items-center align-middle'>
-                <p className='text-xl font-semibold'>{d.title}</p>
+                <p className='text-xl font-semibold text-white'>{d.title}</p>
               </div>
             </div>
           </Link>
@@ -82,36 +83,41 @@ const data = [
     registrationLink: "/teams/tech",
   },
   {
-    title: "Lgistics Team",
-    posterUrl: "team/tech.png", // Use the imported image
+    title: "Logistics Team",
+    posterUrl: "team/logistics.png", // Use the imported image
     registrationLink: "/teams/logi",
   },
   {
-    title: "Event M. Team",
-    posterUrl: "team/tech.png", // Use the imported image
+    title: "Event Management Team",
+    posterUrl: "team/event-management.png", // Use the imported image
     registrationLink: "/teams/em",
   },
   {
     title: "Production Team",
-    posterUrl: "team/tech.png", // Use the imported image
+    posterUrl: "team/production.png", // Use the imported image
     registrationLink: "/teams/tech",
   },
   {
     title: "Content Team",
-    posterUrl: "team/design.png", // Use the imported image
+    posterUrl: "team/content.png", // Use the imported image
     registrationLink: "/teams/content",
   },
 
   {
     title: "PR Team",
-    posterUrl: "team/design.png", // Use the imported image
+    posterUrl: "team/pr.png", // Use the imported image
     registrationLink: "/teams/pr",
   },
 
   {
     title: "Sponsorship Team",
-    posterUrl: "https://moodi.org/static/media/js.5de450ab9613902905c8.png", // Use the imported image
+    posterUrl: "team/sponsorship.png", // Use the imported image
     registrationLink: "/teams/sponi",
+  },
+  {
+    title: "Design Team",
+    posterUrl: "team/design.png",
+    registrationLink: "/teams/design"
   },
 
   // Add more events here
