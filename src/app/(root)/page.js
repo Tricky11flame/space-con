@@ -13,9 +13,7 @@ export default function Home(){
     <FirstPage  />
     {/* <Footer/> */}
     {/* <StyledSlider/> */}
-    <Sliders/>
     <TeamSliders/>
-    <ProgSlider/>
     </>
   )
 }
