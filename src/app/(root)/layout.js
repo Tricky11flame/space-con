@@ -21,7 +21,7 @@ const RootLayout = ({
   children }) => {
   return (
     <html lang="en">
-      <body>
+      <body className=" font-montserrat">
         {children}
         <Footer />
       </body>

@@ -13,7 +13,7 @@ export default function Home(){
     <FirstPage  />
     {/* <Footer/> */}
     {/* <StyledSlider/> */}
-    <TeamSliders/>
+    <Sliders/>
     </>
   )
 }

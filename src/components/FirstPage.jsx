@@ -25,8 +25,14 @@ const FirstPage = ({bar=true}) => {
       {/* Text Section */}
       {bar?<section className=" z-40 flex flex-col items-center justify-center relative top-24 md:top-24 lg:top-24 lg:flex-row lg:justify-end">
         <div className="md:text-right mx-4 md:mx-0 lg:text-right lg:mr-11">
-          <h2 className="text-4xl font-extrabold mt-8 lg:mt-0 mb-4 p-4 px-6 rounded-2xl lg:text-6xl">Explore the Universe</h2>
-          <p className="text-sm lg:text-md mb-8 px-2 lg:pl-0 lg:pr-6">Discover the wonders of space with our amazing content.</p>
+          <h2 className="text-2sxl font-medium mt-8 lg:mt-0 mb-4 p-4 px-6 rounded-2xl lg:text-5xl font-lemonmilk">Explore Cosmos</h2>
+          <p className="text-sm lg:text-md mb-8 px-2 lg:pl-0 lg:pr-6 font-lemonmilk">Discover the wonders of universe with us</p>
+          {/* <p className=" font-spaceCon">space</p>
+          <p className="font-akira">akira</p>
+          <p className="font-deathstar">death</p>
+          <p className="font-ethnocentric">ethno</p>
+          <p className="font-lemonmilk">lemon</p>
+          <p className="font-montserrat">MONT</p> */}
         </div>
       </section>:''}
     </div>

@@ -56,7 +56,7 @@ const Sliders = () => {
       <SlickSlider {...settings}>
 
          {data.map((d) => (
-           <div key={d.title} className='flex flex-col justify-center items-center text-black  shadow-lg '>
+           <div key={d.title} className='flex flex-col justify-center items-center text-black'>
             <div className=''>
             <div className='flex flex-col justify-center items-center p-5'>
               <div className='w-[240px] h-[240px]'>
@@ -64,8 +64,7 @@ const Sliders = () => {
               </div>
 
               <div className='gap-4 p-4 flex flex-col justify-center items-center align-middle'>
-                <p className='text-xl text-white font-semibold'>{d.title}</p>
-                <p className='text-white'>{d.description}</p>
+                <p className='text-xl text-white font-medium'>{d.title}</p>
                 <button className='bg-spaceCon-tertiary text-white text-lg px-6 py-1 rounded-md '><a href={d.registrationLink}>Register</a></button>
               </div>
             </div>

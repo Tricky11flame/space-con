@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <div className="navigation-bar-full text-white font-spaceCon">
-        <nav className="flex items-center justify-between p-0 fixed w-full z-50 border-b-2 border-white bg-opacity-50 backdrop-blur-lg bg-gray-700 bg-clip-padding backdrop-filter ">
+      <div className="navigation-bar-full text-white  font-montserrat">
+        <nav className="flex items-center justify-between p-0 fixed w-full z-50 border-white bg-opacity-50 backdrop-blur-lg bg-gray-700 bg-clip-padding backdrop-filter ">
           {/* Logo */}
           <Link href="/" className="flex items-center ml-4">
             <img src="../../SpaceConLogo.svg" alt="Logo" className="h-12 w-12 m-2 rounded-2xl my-4 " />
@@ -28,11 +28,10 @@ const Navbar = () => {
           </div>
 
           {/* Menu Items (Desktop) */}
-          <div className="hidden lg:flex space-x-6 text-lg ml-4">
+          <div className="hidden lg:flex space-x-6 text-lg ml-24">
+            <Link href="/about" className="nav4 transition-all duration-300 ">ABOUT US</Link>
             <Link href="/" className="nav4 transition-all duration-300 ">HOME</Link>
             <Link href="/events" className="nav4 transition-all duration-300 ">EVENTS</Link>
-            <Link href="/schedule" className="nav4 transition-all duration-300 ">SCHEDULE</Link>
-            <Link href="/about" className="nav4 transition-all duration-300 ">ABOUT US</Link>
           </div>
 
           {/* Sign up Login */}

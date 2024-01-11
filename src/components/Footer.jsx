@@ -1,28 +1,32 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaDiscord, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
 const Footer = () => {
   return (
-    <div className="w-full min-h-full bg-spaceCon-opbg relative mt-24">
+    <div className="w-full min-h-full bg-spaceCon-opbg relative mt-24 font">
       <div className="flex text-white justify-between items-center p-8 flex-wrap gap-8">
         <div className="h-full flex flex-col">
-          <div className="mx-auto w-full">
+          {/* <div className="mx-auto w-full">
             <img src="team/about-team.png" alt="" className="bg-transparent mx-auto h-52" style={{ opacity: "0.8" }} />
-          </div>
+          </div> */}
         </div>
         <div className="">
           <div className="text-2">
-            <p className="font-bold text-xl text-spaceCon-q">ADDRESS</p>
-            <p className="font-bold">Netaji Subhas University of Technology</p>
-            <p className="text-white">Sector-3, Dwarka</p>
-            <p className="text-white">New Delhi-110078</p>
+            <Link href='' className="font-bold text-xl text-spaceCon-q">ADDRESS</Link>
+            <br/>
+            <Link href='https://maps.app.goo.gl/mua2UzzfGm8RkdEdA' className="font-bold">Netaji Subhas University of Technology</Link>
+            <br/>
+            <Link href='https://maps.app.goo.gl/mua2UzzfGm8RkdEdA' className="text-white">Sector-3, Dwarka</Link>
+            <Link href='https://maps.app.goo.gl/mua2UzzfGm8RkdEdA' className="text-white">New Delhi-110078</Link>
             <br />
           </div>
 
           <div className="text-2">
-            <p className="font-bold text-xl text-spaceCon-q">GMAIL</p>
-            <p className="hover:cursor-pointer font-bold hover:text-spaceCon-tertiary">Nakshatra@gmail.com</p>
+            <Link href='' className="font-bold text-xl text-spaceCon-q">GMAIL</Link>
+            <br/>
+            <Link href={"https://mail.google.com/mail/u/0/?fs=1&to=nakshatransit@gmail.com&su=THANK_YOU&body=YOUR_ENQUIRY&tf=cm"} className="hover:cursor-pointer font-bold hover:text-spaceCon-tertiary">nakshatransit@gmail.com</Link>
           </div>
         </div>
         <div className="md:px-0 lg:px-8">
@@ -35,19 +39,19 @@ const Footer = () => {
           </div>
         </div>
         <div className="hidden xl:block">
-          <div className="w-52 h-10 mx-auto flex justify-center items-center rounded-md hover:cursor-pointer hover:bg-[#A367B1] hover:text-black duration-300 gap-2">
+          <Link href='https://discord.gg/uZQAUPgS' className="w-52 h-10 mx-auto flex justify-center items-center rounded-md hover:cursor-pointer hover:bg-[#A367B1] hover:text-black duration-300 gap-2">
             <span className=""><FaDiscord size={30} /></span>
             <p className="font-bold">
               Join Discord
             </p>
-          </div>
+          </Link>
 
           <div className="mx-auto flex gap-8 pt-8 justify-center items-center sm:flex-col md:flex-row">
-            <span className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"><FaFacebook size={40} /></span>
-            <span className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"> <FaTwitter size={40} /></span>
-            <span className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"> <FaInstagram size={40} /></span>
-            <span className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"><FaLinkedin size={40} /></span>
-            <span className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"><SiGmail size={40} /></span>
+            <Link  href='https://www.facebook.com/Nakshatra.DU' className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"><FaFacebook size={40} /></Link>
+            {/* <Link href='' className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"> <FaTwitter size={40} /></Link> */}
+            <Link href='https://www.instagram.com/nakshatra_nsut/' className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"> <FaInstagram size={40} /></Link>
+            <Link href='https://www.linkedin.com/in/nakshatransut/' className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"><FaLinkedin size={40} /></Link>
+            <Link href='' className="hover:cursor-pointer hover:text-spaceCon-tertiary duration-300"><SiGmail size={40} /></Link>
           </div>
         </div>
       </div>

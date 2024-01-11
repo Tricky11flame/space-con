@@ -13,7 +13,7 @@ const Navbar2 = () => {
   return (
     <>
       {/* Navbar */}
-      <div className="naviar-full text-white font-spaceCon ">
+      <div className="naviar-full text-white font-montserrat ">
       <div className="flex items-center z-50 justify-between p-0  w-[100%] border-b-2 border-slate-950 bg-opacity-50 backdrop-blur-lg bg-gray-700 bg-clip-padding backdrop-filter ">
         {/* Logo */}
         <Link href='/' className="flex items-center ml-4">

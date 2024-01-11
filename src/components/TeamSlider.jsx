@@ -56,7 +56,7 @@ const TeamSliders = () => {
       <SlickSlider {...settings}>
 
          {data.map((d) => (
-           <Link key={d.title} href={d.registrationLink} className='flex flex-col justify-center items-center text-black shadow-lg '>
+           <Link key={d.title} href={d.registrationLink} className='flex flex-col justify-center items-center text-black'>
             <div className='flex flex-col justify-center items-center p-5'>
               <div className='w-[240px] h-[240px]'>
                 <img src={d.posterUrl} className='rounded-xl' />
