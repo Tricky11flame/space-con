@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🚀 spaceCon
 
-First, run the development server:
+**spaceCon** is the official website for the Astronomy-Mathematics Fest that was planned in our college. It serves as a central hub for showcasing all the event details and redirecting users to registration platforms like Google Forms and Unstop.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## 🌟 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🧭 Event listings and detailed descriptions  
+- 🔗 Easy redirection to event registration pages  
+- 💻 Fully responsive and modern UI  
+- 🌙 Theme tailored for a sci-fi / space vibe  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/) – for server-side rendering and routing  
+- [Tailwind CSS](https://tailwindcss.com/) – for styling and utility-first design  
+- [Material UI](https://mui.com/) – used in parts of the project (merged and managed during development)
 
-## Learn More
+## 🧩 My Role
 
-To learn more about Next.js, take a look at the following resources:
+As the lead developer:
+- Managed and merged code from contributors
+- Ensured compatibility between Tailwind UI and Material UI
+- Oversaw the deployment and handled final UI consistency
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots of Local Deployement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="center">
+  <img src="./ppt.gif" alt="Landing Page" width="750"/>
+</p>
 
-## Deploy on Vercel
+## ⚠️ Disclaimer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is no longer actively maintained.  
+To run it locally, you **will** encounter some dependency issues.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Use `npm install` followed by:  
+> `npm audit fix --force`  
+> You might also have to manually fix other peer dependency warnings or version mismatches.
+
+## 🤝 Contributions
+
+This was a collaborative project. Shoutout to the team for the support and creative ideas during the development!
+
+---
+
+Feel free to fork or refer to the UI/logic if you're building something similar 🌌
