@@ -1,13 +1,22 @@
 import Navbar2 from "@/components/Navbar2";
 import EventRegister from "@/components/EventRegister";
+import Navbar from "@/components/Navbar";
+import EventCard from "@/components/EventCard";
+import RegistrationForm from "@/components/RegistrationForm";
 
 export default function Page({ params }) {
 
     return (
+        
         <>
-            <Navbar2 />
-
-            {/* <div className="w-[100%] flex justify-evenly py-10">
+        <Navbar/>
+        <div className="fixed w-full"><img src="/background/home-bg-blur.png" alt="" className="-z-50 w-full" /></div>
+        <div className="fixed flex justify-center w-full"><img src="/background/home-bg.png" alt="" className="-z-49 w-full" loading="lazy" /></div>
+          <div className=" relative pt-24">
+            <RegistrationForm/>
+            {/* Add more EventCard components as needed */}
+          </div>
+        {/* <div className="w-[100%] flex justify-evenly py-10">
                 <div className="">
                     <img src={event.posterUrl} alt="" />
                 </div>
@@ -38,8 +47,6 @@ export default function Page({ params }) {
                     </div>
                 </div>
             </div > */}
-
-            <EventRegister eventIdno={params.eventID} />
 
         </>
     )

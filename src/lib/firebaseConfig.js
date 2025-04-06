@@ -2,16 +2,15 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
-export const firebaseConfig = {
-  apiKey: "AIzaSyBJl434DkkMfmLgWdOMbnNI28ZWmboA1JA",
-  authDomain: "nakshatra-1b99e.firebaseapp.com",
-  projectId: "nakshatra-1b99e",
-  storageBucket: "nakshatra-1b99e.appspot.com",
-  messagingSenderId: "34151056050",
-  appId: "1:34151056050:web:21fad5c19f3c755246ffab",
-  measurementId: "G-P3Q30G219Z",
+const firebaseConfig = {
+  apiKey: "AIzaSyA7qA7n4Le0SlC-UtC4Z69kJDu5-1pXm84",
+  authDomain: "space-con-e0a82.firebaseapp.com",
+  projectId: "space-con-e0a82",
+  storageBucket: "space-con-e0a82.appspot.com",
+  messagingSenderId: "5797946148",
+  appId: "1:5797946148:web:efe0192243dd10bd4809b1",
+  measurementId: "G-VMX8XE9LGC"
 };
-
 
 // Initialize Firebase
 export const firebaseApp = initializeApp(firebaseConfig);
